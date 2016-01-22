@@ -1,0 +1,12 @@
+## ZSH Aliases
+# ls
+alias ls='gls --color=auto'
+alias ll='gls -lh --color=auto'
+alias la='gls -lah --color=auto'
+alias work='cd $HOME/Promotion/GIT-SVN/Papers/COAX/GenericExpressionsPredicateLiftings'
+# md5sum compatibility
+# alias md5sum='gmd5sum' already present in Homebrew md5sha1sum
+alias tmux='tmux -2'
+alias -g G='| grep -i'
+alias -g L='| less'
+alias -s tex=vim
