@@ -60,6 +60,31 @@ zmodload zsh/datetime
 autoload -Uz edit-command-line
 zle -N edit-command-line
 
+############## PATH ##############
+
+typeset -U path
+path=(
+~/bin # user progs
+/usr/local/opt/coreutils/libexec/gnubin # gnuprogs with real names
+/usr/local/opt/gnu-sed/libexec/gnubin
+# /opt/local/bin
+# /opt/local/sbin
+${path}
+# ~/.cabal/bin
+# /usr/texbin
+# /usr/X11/bin
+)
+typeset -U manpath
+manpath=(
+/usr/local/opt/coreutils/libexec/gnuman
+/usr/local/opt/gnu-sed/libexec/gnuman
+${manpath}
+)
+fpath=(
+~/.zsh
+${fpath}
+)
+
 
 ###################
 bindkey '[3~' delete-char
