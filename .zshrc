@@ -88,20 +88,20 @@ ${fpath}
 
 
 ###################
-bindkey '[3~' delete-char
-bindkey '[1~' beginning-of-line
-bindkey '[4~' end-of-line
-bindkey '[A' up-line-or-history
-bindkey '[B' down-line-or-history
-bindkey '[D' backward-char
-bindkey '[C' forward-char
-bindkey '[5~' history-search-backward
-bindkey '[6~' history-search-forward
-bindkey '' history-incremental-search-backward
-bindkey '' history-incremental-search-forward
+#bindkey '[3~' delete-char
+#bindkey '[1~' beginning-of-line
+#bindkey '[4~' end-of-line
+#bindkey '[A' up-line-or-history
+#bindkey '[B' down-line-or-history
+#bindkey '[D' backward-char
+#bindkey '[C' forward-char
+#bindkey '[5~' history-search-backward
+#bindkey '[6~' history-search-forward
+#bindkey '' history-incremental-search-backward
+#bindkey '' history-incremental-search-forward
 
-bindkey 'OH' beginning-of-line
-bindkey 'OF' end-of-line
+#bindkey 'OH' beginning-of-line
+#bindkey 'OF' end-of-line
 
 bindkey -v
 # fix backspace
@@ -111,6 +111,8 @@ bindkey -M viins "\e[4~" end-of-line # end key
 bindkey -M viins "\e[3~" delete-char # delete key
 bindkey -M viins "\e[5~" history-search-backward # page down
 bindkey -M viins "\e[6~" history-search-forward # page up
+bindkey -M viins "^r" history-incremental-search-backward # 
+bindkey -M viins "^t" history-incremental-search-forward  #
 
 bindkey -M vicmd "e" edit-command-line
 
