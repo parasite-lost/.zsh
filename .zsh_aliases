@@ -11,4 +11,3 @@ alias tmux='tmux -2'
 alias -g G='| grep -i'
 alias -g L='| less'
 alias -s tex=vim
-alias sftp="with-readline sftp"

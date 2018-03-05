@@ -67,6 +67,7 @@ path=(
 ~/bin # user progs
 /usr/local/opt/coreutils/libexec/gnubin # gnuprogs with real names
 /usr/local/opt/gnu-sed/libexec/gnubin
+/usr/local/opt/python/libexec/bin # python 2.7.13+ from homebrew
 # /opt/local/bin
 # /opt/local/sbin
 ${path}
